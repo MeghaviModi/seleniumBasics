@@ -2,6 +2,7 @@ package com.envision.openbrowsers.selectValueFromDropDown;
 
 import io.cucumber.java.eo.Se;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -29,6 +30,8 @@ public class UsingSelectByIndex {
          WebElement yearSelectBoxElement =cd.findElement(By.id("year"));
          Select yearSelect =new Select(yearSelectBoxElement);
          yearSelect.selectByValue("2014");
+        JavascriptExecutor js= (JavascriptExecutor)(cd);
+        js.executeScript("window.scrollBY(0,500)");
          Thread.sleep(5000);
          cd.quit();
      }

@@ -3,6 +3,8 @@ package Assigment3Utility;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.Assert;
 
 import java.time.Duration;
 
@@ -19,5 +21,6 @@ public class BrowserFile1 {
         driver1.manage().window().maximize();
         driver1.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
         return driver1;
+       
     }
 }

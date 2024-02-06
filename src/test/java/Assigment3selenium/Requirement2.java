@@ -22,7 +22,7 @@ public class Requirement2 {
         String purl = Property_File_Reader.getPropertyValue("config", "URL");
         driver1.get(purl);
         driver1.manage().window().maximize();
-        driver1.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
+        driver1.manage().timeouts().implicitlyWait(Duration.ofSeconds(100));
 
         WebElement Search = new WebDriverWait(driver1,Duration.ofSeconds(10)).pollingEvery(Duration.ofSeconds(1))
                         .until(dr -> dr.findElement(By.xpath("//input[@type='text' and contains(@placeholder,'Search')]")));

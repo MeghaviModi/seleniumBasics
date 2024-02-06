@@ -9,6 +9,8 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
+import java.util.List;
+import java.util.Set;
 
 public class Both_selectClass_and_ListAnd_lambdaExpresstion {
     @Test
@@ -23,6 +25,7 @@ public class Both_selectClass_and_ListAnd_lambdaExpresstion {
         WebElement daySelectBoxElement2=cd.findElement(By.id("day"));
         Select daySelectBoth=new Select(daySelectBoxElement2);
         daySelectBoth.getOptions().get(11).click();
+
 
         new Select(cd.findElement(By.id("month"))).getOptions().stream().filter((month -> month.getText().equalsIgnoreCase("mar"))).findFirst().get().click();
         Thread.sleep(3000);

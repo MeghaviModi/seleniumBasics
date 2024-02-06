@@ -20,6 +20,7 @@ public class SwitchToAlert_UsingExplicityWait {
         cd.switchTo().frame("iframeResult");
 
         WebElement tryItButton = cd.findElement(By.xpath("//button[text()='Try it']"));
+
         tryItButton.click();
         WebDriverWait ww=new WebDriverWait(cd, Duration.ofSeconds(50));
         Alert a=ww.pollingEvery(Duration.ofSeconds(5))

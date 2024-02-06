@@ -27,7 +27,7 @@ public class WebPageTest {
     public static Actions webElement1;
 
     public static void getBrowser() throws IOException {
-
+//config_file_location\browsername.properties
         try (FileInputStream fs = new FileInputStream("config_file_location\\browsername.properties")) {
             Properties p = new Properties();
             p.load(fs);
@@ -62,8 +62,6 @@ public class WebPageTest {
     @Test
     public static void testRun() throws InterruptedException, AWTException {
 
-
-
         String currentHandle = dr.getWindowHandle();
         WebElement webElement = dr.findElement(By.xpath("//a[@href='cardnumber.php' and contains(text(),'Generate Card Number')]"));
         Thread.sleep(1000);
@@ -96,7 +94,6 @@ public class WebPageTest {
         cardExMonth=webElement.getText().split("/",2)[0];
         webElement = dr.findElement(By.xpath("   //div[@class='inner']//h4[4]"));
         cardLimit=webElement.getText();
-
 
         webElement = dr.findElement(By.xpath("//nav[@id='nav']/a[@href='purchasetoy.php']"));
         webElement.click();
@@ -153,21 +150,16 @@ public class WebPageTest {
         webElement = dr.findElement(By.xpath("//input[@type='submit']"));
         webElement.click();
 
-
         String amountBalance = String.valueOf(100 -Integer.parseInt(priceValue)*Integer.parseInt(qtySelected));
         webElement = dr.findElement(By.xpath("//div[@class='table-wrapper']/h4/span"));
         Assert.assertEquals(webElement.getText(),amountBalance,"NOT BALANCED");
         System.out.println(webElement.getText() +" : " + amountBalance);
 
-
         webElement = dr.findElement(By.xpath("//div[@class='table-wrapper']/table[@class='alt']/tbody/tr/td[6]"));
         System.out.println("ORDER ID:"+webElement.getText());
         Assert.assertEquals(webElement.getText(),orderID,"ORDER ID DOES NOT MATCH!!!");
 
-
-
         dr.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
     }
 
 

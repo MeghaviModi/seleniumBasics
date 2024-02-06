@@ -36,13 +36,14 @@ public class HandlingDynamicMenuUsingRobot {
 
 
 
-       /* Robot r = new Robot();
+        Robot r = new Robot();
         r.keyPress(KeyEvent.VK_DOWN);
         r.keyRelease(KeyEvent.VK_DOWN);
         r.keyPress(KeyEvent.VK_DOWN);
         r.keyRelease(KeyEvent.VK_DOWN);
+
          // I need Return to click
-        dropDown.sendKeys(Keys.RETURN);*/
+        dropDown.sendKeys(Keys.RETURN);
 
 
         //r.keyPress(KeyEvent.VK_ENTER);

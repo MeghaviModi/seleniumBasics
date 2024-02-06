@@ -34,5 +34,6 @@ public class Using_windowHandle_method {
         cd.switchTo().window(currentPage);
         WebElement runButton =cd.findElement(By.id("runbtn"));
         runButton.click();
+        cd.quit();
     }
 }

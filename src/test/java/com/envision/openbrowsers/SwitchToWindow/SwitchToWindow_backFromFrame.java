@@ -19,6 +19,7 @@ public class SwitchToWindow_backFromFrame {
         cd.get("https://www.w3schools.com/js/tryit.asp?filename=tryjs_confirm");
         Thread.sleep(5000);
         cd.switchTo().frame("iframeResult");
+        cd.navigate().refresh();
 
         WebElement tryItButton = cd.findElement(By.xpath("//button[text()='Try it']"));
         tryItButton.click();

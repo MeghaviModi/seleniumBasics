@@ -35,20 +35,21 @@
       <scope>test</scope>
     </dependency>
     <!--selenium-->
-    <dependency>
-      <groupId>org.seleniumhq.selenium</groupId>
-      <artifactId>selenium-java</artifactId>
-      <version>4.4.0</version>
-    </dependency>
-    <!--testng-->
+      <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+      <dependency>
+          <groupId>org.seleniumhq.selenium</groupId>
+          <artifactId>selenium-java</artifactId>
+          <version>4.11.0</version>
+      </dependency>
+
+
+      <!--testng-->
 
       <dependency>
           <groupId>org.testng</groupId>
           <artifactId>testng</artifactId>
-          <version>7.5</version>
-          <scope>test</scope>
+          <version>6.8.5</version>
       </dependency>
-
 
       <!-- cucumber -->
     <dependency>
@@ -86,6 +87,12 @@
           <groupId>ru.yandex.qatools.ashot</groupId>
           <artifactId>ashot</artifactId>
           <version>1.5.4</version>
+      </dependency>
+      <dependency>
+          <groupId>junit</groupId>
+          <artifactId>junit</artifactId>
+          <version>4.13.2</version>
+          <scope>compile</scope>
       </dependency>
 
 

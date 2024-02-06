@@ -17,7 +17,7 @@ import java.util.Set;
 public class E_commerceApplication {
     @Test
     public static void E_commerceApplicationTest() throws InterruptedException {
-        WebDriverManager.chromedriver().setup();
+        //WebDriverManager.chromedriver().setup();
         WebDriver driver=new ChromeDriver();
         driver.get("http://demo.guru99.com/payment-gateway/index.php");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));

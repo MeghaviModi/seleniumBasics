@@ -13,7 +13,7 @@ import java.time.Duration;
 public class End_To_EndOrderEcommerce_website {
     @Test
     public static void buyOrderFunctionalityTest() throws InterruptedException {
-        WebDriverManager.chromedriver().setup();
+        //WebDriverManager.chromedriver().setup();
         WebDriver driver=new ChromeDriver();
         //step1: OpenUrl
         driver.get("http://automationpractice.com/index.php");

@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -15,6 +17,7 @@ import java.io.FileNotFoundException;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 public class Ex1 {
     WebDriver driver = null;
@@ -31,6 +34,7 @@ public class Ex1 {
     public void ExTest() throws InterruptedException {
         driver.get("https://www.snapdeal.com/");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
+       //Wait wait=new FluentWait(driver).withTimeout(Duration.ofSeconds(10)).pollingEvery(Duration.ofSeconds(30)).ignoring(NoSuchElementException.class);
 
         Thread.sleep(300);
         WebElement com_Gam = driver.findElement(By.xpath("//div[@class='leftNavigationLeftContainer expandDiv']/ul/li[11]"));
