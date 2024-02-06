@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="3" failures="2" name="TestSuite" time="20.513" errors="0" skipped="1">
+  <properties>
+    <property name="idea.version" value="2022.3.3"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_333.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.333-b02"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/meghavimodi/myCode/seleniumBasics"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="CA"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/meghavimodi/myCode/seleniumBasics"/>
+    <property name="java.runtime.version" value="1.8.0_333-b02"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_333.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/vk/ljtrb3l91653tpc8ph7zs06w0000gn/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="maven.ext.class.path" value="/Applications/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="/Applications/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/meghavimodi/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="jansi.passthrough" value="true"/>
+    <property name="maven.conf" value="/Applications/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="12.4"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/meghavimodi"/>
+    <property name="user.timezone" value="America/Toronto"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="meghavimodi"/>
+    <property name="java.class.path" value="/Applications/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds.license:/Applications/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds-2.6.0.jar:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_333.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2022.3.3 package"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_333"/>
+    <property name="java.ext.dirs" value="/Users/meghavimodi/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_333.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_333.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_333.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_333.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_333.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_333.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_333.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_333.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_333.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Applications/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="Assigment3selenium.WebPageTest" name="openBrowser" time="0.495">
+    <failure message="config_file_location\browsername.properties (No such file or directory)" type="java.io.FileNotFoundException">java.io.FileNotFoundException: config_file_location\browsername.properties (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:138)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:93)
+	at Assigment3selenium.WebPageTest.getBrowser(WebPageTest.java:31)
+	at Assigment3selenium.WebPageTest.openBrowser(WebPageTest.java:56)
+</failure>
+    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@5b464ce8
+</system-out>
+    <system-err>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+</system-err>
+  </testcase>
+  <testcase classname="Assigment3selenium.WebPageTest" name="testRun" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="Assigment3selenium.Requirement_3Test" name="getRequirement3Test" time="20.018">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at Assigment3selenium.Requirement_3Test.lambda$getRequirement3Test$0(Requirement_3Test.java:40)
+	at java.util.TimSort.countRunAndMakeAscending(TimSort.java:355)
+	at java.util.TimSort.sort(TimSort.java:220)
+	at java.util.Arrays.sort(Arrays.java:1512)
+	at java.util.ArrayList.sort(ArrayList.java:1464)
+	at java.util.Collections.sort(Collections.java:177)
+	at Assigment3selenium.Requirement_3Test.getRequirement3Test(Requirement_3Test.java:40)
+</failure>
+    <system-err>Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 2134
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+</system-err>
+  </testcase>
+</testsuite>
